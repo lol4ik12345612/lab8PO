@@ -48,5 +48,7 @@ int main()
         cout << "Error: " << error << '\n';
     }
 
+    cout << "Author: Denis Proschenko\n";
+    cout << "Group: 24ISIT\n";
     return 0;
 }
