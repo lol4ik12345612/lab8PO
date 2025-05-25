@@ -88,7 +88,7 @@ int main() {
     else {
         for (const auto& op : filtered) {
             std::cout << op.date << " " << op.time << " " << op.type << " "
-                << op.account << " " << op.amount << " " << op.purpose << std::endl;
+                << op.account << " " << op.amount << " " << op.purpose << std::endl; //gaegae
         }
     }
 
