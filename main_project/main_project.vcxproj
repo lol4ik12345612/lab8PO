@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bank_operation.cpp" />
     <ClCompile Include="file_reader.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -137,6 +138,7 @@
     <ClInclude Include="bank_operation.h" />
     <ClInclude Include="constants.h" />
     <ClInclude Include="file_reader.h" />
+    <ClInclude Include="sorting.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
