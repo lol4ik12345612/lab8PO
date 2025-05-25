@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "file_reader.h"
 #include "bank_operation.h"
 #include "constants.h"
@@ -15,15 +16,30 @@ int main()
     try
     {
         operations = readOperations("data.txt");
+        cout << "***** Bank Operations *****\n\n";
 
         for (const auto& op : operations)
         {
-            cout << "Date: " << op.date << '\n';
-            cout << "Time: " << op.time << '\n';
-            cout << "Type: " << op.type << '\n';
-            cout << "Account: " << op.account << '\n';
-            cout << "Amount: " << op.amount << '\n';
-            cout << "Purpose: " << op.purpose << '\n';
+            /********** вывод операции **********/
+            cout << "Transaction.....: ";
+            cout << op.date << " " << op.time << '\n';
+
+            /********** тип операции **********/
+            cout << "Type............: ";
+            cout << op.type << '\n';
+
+            /********** номер счета **********/
+            cout << "Account.........: ";
+            cout << op.account << '\n';
+
+            /********** сумма операции **********/
+            cout << "Amount..........: ";
+            cout << fixed << setprecision(2) << op.amount << '\n';
+
+            /********** назначение **********/
+            cout << "Purpose.........: ";
+            cout << op.purpose << '\n';
+
             cout << '\n';
         }
     }
