@@ -7,5 +7,5 @@
 16.11.2021 11:05   Expense   852963    1000.00  Payment for development consultations
 25.11.2021 04:05   Expense   159357    550.00   Equipment upgrade
 04.05.2015 15:05   Expense   357159    750.00   Training expenses
-10.11.2021 09:30   Expense   741852    650.00   Office supplies purchase
+10.11.2021 09:30   income   741852    650.00   Office supplies purchase
 15.05.2015 18:45   Expense   369258    1200.00  Marketing campaign expenses

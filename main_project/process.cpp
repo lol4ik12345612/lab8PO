@@ -13,5 +13,5 @@ double process(BankOperation* operations[], int size) {
         }
     }
 
-    return balance; // Итоговая сумма на счёте
+    return balance; 
 }

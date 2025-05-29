@@ -11,6 +11,5 @@ struct BankOperation {
     std::string purpose;
 };
 
-// Объявления функций фильтрации
 std::vector<BankOperation> filterIncome(const std::vector<BankOperation>& ops);
 std::vector<BankOperation> filterNovember2021(const std::vector<BankOperation>& ops);

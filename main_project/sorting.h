@@ -2,7 +2,6 @@
 #include <vector>
 #include "bank_operation.h"
 
-// Критерии сравнения
 int compareByPurpose(const BankOperation* a, const BankOperation* b) {
     return a->purpose.compare(b->purpose);
 }
@@ -17,7 +16,6 @@ int compareByAccountTypeAmount(const BankOperation* a, const BankOperation* b) {
     return (a->amount < b->amount) ? -1 : (a->amount > b->amount) ? 1 : 0;
 }
 
-// Сортировка выбором
 void selectionSort(std::vector<BankOperation*>& arr, int (*compare)(const BankOperation*, const BankOperation*)) {
     for (size_t i = 0; i < arr.size() - 1; ++i) {
         size_t minIndex = i;
@@ -30,7 +28,6 @@ void selectionSort(std::vector<BankOperation*>& arr, int (*compare)(const BankOp
     }
 }
 
-// Быстрая сортировка
 void quickSort(std::vector<BankOperation*>& arr, int (*compare)(const BankOperation*, const BankOperation*), int low, int high) {
     if (low < high) {
         BankOperation* pivot = arr[high];

@@ -10,7 +10,7 @@ std::vector<BankOperation> filterIncome(const std::vector<BankOperation>& ops) {
     return result;
 }
 
-std::vector<BankOperation> filterNovember2021(const std::vector<BankOperation>& ops) {
+std::vector<BankOperation> filterNovember2021(const std::vector<BankOperation>& ops) {  
     std::vector<BankOperation> result;
     for (const auto& op : ops) {
         size_t dot1 = op.date.find('.');
@@ -21,7 +21,7 @@ std::vector<BankOperation> filterNovember2021(const std::vector<BankOperation>& 
             std::string year = op.date.substr(dot2 + 1);
 
             if (month == "11" && year == "2021") {
-                result.push_back(op);
+                result.push_back(op);  //agdsdsfg
             }
         }
     }

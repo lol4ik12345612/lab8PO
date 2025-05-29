@@ -7,7 +7,6 @@ std::vector<BankOperation> readOperations(const std::string& filename) {
     std::vector<BankOperation> operations;
     std::ifstream file(filename);
 
-    // Проверка успешного открытия файла
     if (!file.is_open()) {
         std::cerr << "Ошибка: Не удалось открыть файл " << filename << std::endl;
         return operations;

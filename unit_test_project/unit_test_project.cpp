@@ -8,7 +8,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace unittestproject
 {
-    // Вспомогательная функция для создания банковской операции
+    
     BankOperation* build_operation(const std::string& type, const std::string& account, double amount)
     {
         BankOperation* operation = new BankOperation;
@@ -18,7 +18,7 @@ namespace unittestproject
         return operation;
     }
 
-    // Функция удаления массива тестовых данных
+    
     void delete_operations(BankOperation* array[], int size)
     {
         for (int i = 0; i < size; i++)
